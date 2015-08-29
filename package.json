@@ -1,0 +1,33 @@
+{
+  "name": "npm-prefix",
+  "version": "0.0.0",
+  "description": "Get global npm prefix. Respects npmrc configs",
+  "author": "Eugene Sharygin <eush77@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/eush77/npm-prefix",
+  "repository": "eush77/npm-prefix",
+  "bugs": {
+    "url": "https://github.com/eush77/npm-prefix/issues"
+  },
+  "keywords": [
+    "bin",
+    "config",
+    "global",
+    "lib",
+    "node_modules",
+    "npm",
+    "npmrc",
+    "path",
+    "prefix",
+    "require",
+    "resolve",
+    "root"
+  ],
+  "dependencies": {
+    "rc": "^1.1.0"
+  },
+  "devDependencies": {}
+}
