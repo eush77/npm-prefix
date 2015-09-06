@@ -6,5 +6,8 @@ var path = require('path');
 
 
 module.exports = function () {
-  return rc('npm', null, []).prefix || path.resolve(process.execPath, '../..');
+  return rc('npm', null, []).prefix ||
+    (process.platform == 'win32'
+     ? path.dirname(process.execPath)
+     : path.resolve(process.execPath, '../..'));
 };
