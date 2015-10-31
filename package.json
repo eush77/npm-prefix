@@ -30,9 +30,11 @@
     "root"
   ],
   "dependencies": {
-    "rc": "^1.1.0"
+    "rc": "^1.1.0",
+    "untildify": "^2.1.0"
   },
   "devDependencies": {
+    "os-homedir": "^1.0.1",
     "tape": "^4.2.2"
   }
 }
