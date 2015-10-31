@@ -2,10 +2,12 @@
 
 # npm-prefix
 
-[![Dependency Status][david-badge]][david]
+[![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
 
 Get global npm prefix. Respects npmrc configs.
 
+[travis]: https://travis-ci.org/eush77/npm-prefix
+[travis-badge]: https://travis-ci.org/eush77/npm-prefix.svg?branch=master
 [david]: https://david-dm.org/eush77/npm-prefix
 [david-badge]: https://david-dm.org/eush77/npm-prefix.png
 
