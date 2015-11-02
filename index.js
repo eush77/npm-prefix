@@ -7,8 +7,15 @@ var path = require('path');
 
 
 module.exports = function () {
-  return untildify(rc('npm', null, []).prefix) ||
-    (process.platform == 'win32'
-     ? path.dirname(process.execPath)
-     : path.resolve(process.execPath, '../..'));
+  var rcPrefix = rc('npm', null, []).prefix;
+
+  if (rcPrefix) {
+    return untildify(rcPrefix);
+  }
+  else if (process.platform == 'win32') {
+    return path.dirname(process.execPath);
+  }
+  else {
+    return path.resolve(process.execPath, '../..');
+  }
 };

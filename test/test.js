@@ -20,3 +20,11 @@ test('home-relative prefix', function (t) {
   t.equal(npmPrefix(), path.join(homedir(), 'local'));
   t.end();
 });
+
+
+test('no rc', function (t) {
+  process.chdir(__dirname + '/fixtures/no-rc');
+  var prefix = npmPrefix();
+  t.ok(path.relative(path.resolve(process.execPath, '../..'), prefix)[0] != '.');
+  t.end();
+});
