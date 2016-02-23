@@ -30,6 +30,13 @@ test('home-relative prefix', function (t) {
 });
 
 
+test('interprets environment variables', function (t) {
+  npmrc.prefix = '${HOME}/local';
+  t.equal(prefix(), path.join(homedir(), 'local'));
+  t.end();
+});
+
+
 test('no rc', function (t) {
   delete npmrc.prefix;
   t.ok(path.relative(path.resolve(process.execPath, '../..'), prefix())[0] != '.');

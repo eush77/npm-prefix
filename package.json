@@ -31,6 +31,7 @@
   ],
   "dependencies": {
     "rc": "^1.1.0",
+    "shellsubstitute": "^1.1.0",
     "untildify": "^2.1.0"
   },
   "devDependencies": {
