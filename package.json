@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "os-homedir": "^1.0.1",
+    "rewire": "^2.5.1",
     "tape": "^4.2.2"
   }
 }
